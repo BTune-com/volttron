@@ -41,28 +41,28 @@
 # in the global python3.
 
 option_requirements = [
-    ('pyzmq', ['--zmq=bundled']),
+    ('pyzmq==22.3.0', ['--zmq=bundled']),
 ]
 
 install_requires = [
     'gevent==20.6.1',
-    'grequests',
+    'grequests==0.6.0',
     'greenlet==0.4.16',
-    'idna<3,>=2.5',
+    'idna==2.10',
     'requests==2.23.0',
-    'ply',
-    'psutil',
-    'python-dateutil',
-    'pytz',
-    'PyYAML',
-    'pyzmq',
+    'ply==3.11',
+    'psutil==5.8.0',
+    'python-dateutil==2.8.1',
+    'pytz==2021.1',
+    'PyYAML==5.4.1',
+    'pyzmq==22.3.0',
     'setuptools',
-    'tzlocal',
+    'tzlocal==2.1',
     'pyOpenSSL==19.0.0',
     'cryptography==2.3',
     # Cross platform way of handling changes in file/directories.
     # https://github.com/Bogdanp/watchdog_gevent
-    'watchdog-gevent',
+    'watchdog-gevent==0.1.1',
     'wheel==0.30'
 ]
 
@@ -124,12 +124,12 @@ extras_require = {
         'deepdiff'
     ],
     'web': [    # Web support for launching web based agents including ssl and json web tokens.
-        'ws4py',
+        'ws4py==0.5.1',
         'PyJWT==1.7.1',
-        'Jinja2',
-        'passlib',
-        'argon2-cffi',
-        'Werkzeug'
+        'Jinja2==3.1.2',
+        'passlib==1.7.4',
+        'argon2-cffi==21.3.0',
+        'Werkzeug==2.2.2'
     ],
     'weather': [
         'Pint'
